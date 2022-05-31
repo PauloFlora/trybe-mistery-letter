@@ -1,7 +1,6 @@
 const letterContainer = document.getElementById('carta-gerada');
 const letterText = document.getElementById('carta-texto');
 const letterBtn = document.getElementById('criar-carta');
-const wordCounter = document.getElementById('carta-contador');
 
 const style = ['newspaper', 'magazine1', 'magazine2'];
 const size = ['medium', 'big', 'reallybig'];
@@ -20,7 +19,6 @@ function oneOfTwoClasses() {
 
 function addClasses() {
   const wordList = document.getElementsByTagName('span');
-  wordCounter.innerText = wordList.length;
   for (let i = 0; i < wordList.length; i += 1) {
     const newClass1 = style[oneOfThreeClasses()];
     const newClass2 = size[oneOfThreeClasses()];
